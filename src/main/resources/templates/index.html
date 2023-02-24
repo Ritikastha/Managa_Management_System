@@ -1,0 +1,334 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ===== CSS ===== -->
+<!--    <link rel="stylesheet" href="assets/css/styles.css">-->
+    <link th:href="@{~/css/homepage.css}" rel="stylesheet">
+<!--    <link th:href="@{~/scss/styles.scss}" rel="stylesheet">-->
+
+    <link rel="stylesheet" th:href="@{~/css/bootstrap.min.css}">
+
+
+    <link rel="stylesheet" th:href="@{~/css/responsive.css}">
+
+
+    <script th:src="@{~/js/main.js}"></script>
+    <title>Manga-Book</title>
+</head>
+<body class="main-layout home_page">
+
+<header>
+    <!-- header inner -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                    <div class="full">
+                        <div class="center-desk">
+                            <div class="logo"> <a th:href="@{/user/index}"><p style="font-size: 28px; color: white;margin-top: 8px; font-weight: bold">MANGA-BOOK</p></a> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                    <div class="menu-area">
+                        <div class="limit-box">
+                            <nav class="main-menu">
+                                <ul class="menu-area-main">
+                                    <li class="active"> <a th:href="@{/user/index}">Home</a> </li>
+                                    <li> <a href="#about">About us</a> </li>
+                                    <li><a href="#book">Our Books</a></li>
+                                    <li><a href="#library">library</a></li>
+<!--                                    <li><a href="contact.html">Contact us</a></li>-->
+
+                                    <li class="nav__item"><a th:href="@{/login}" class="nav__link">login</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end header inner -->
+</header>
+
+
+<section class="slider_section">
+    <div id="myCarousel" class="carousel slide banner-main" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="first-slide" th:src="@{~/img/banner.jpg} "alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption ">
+                        <h1 style=" position: absolute;top:-300px;left:-50px">The Best Libraries That<br> Every Manga Lover Must<br> Visit!</h1>
+                        <div class="button_section" style="margin-bottom: 30px; margin-left: 100px; margin-bottom: 100px"> <a class="main_bt" href="#">Read More</a>  </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- about -->
+<div class="about" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="aboutheading">
+                    <h2>About <strong class="black">Us</strong></h2>
+<!--                    <span>adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</span>-->
+                </div>
+            </div>
+        </div>
+        <div class="row border">
+            <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+                <div class="about-box">
+                    <p> Manga usually follows the traditional style as found in Japan. Japanese manga is to be read from the right side to the left, opposite of traditional American books. Not only do you read the pages from right to left, but you also read the panels and text from right to left.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                <div class="about-box">
+                    <figure><img th:src="@{~/img/piece.png}" alt="img" /></figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Library -->
+<div class="Library" id="library">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="titlepage">
+                    <h2>Our <strong class="black">Library </strong></h2>
+<!--                    <span>adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</span>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="Library-box">
+                        <figure><img th:src="@{~/img/mangaBook.jpg}" alt="#" /></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12">-->
+<!--                <div class="read-more">-->
+<!--                    <a href="#">Read More</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+</div>
+<!-- end Library -->
+<!--Books -->
+<div class="Books" id ="book">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="titlepage">
+                    <h2>Our <strong class="black">Books </strong></h2>
+                    <span>Manga is an umbrella term for a wide variety of comic books and graphic novels originally produced and published in Japan.</span>
+                </div>
+            </div>
+        </div>
+        <div class="row box">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                <div class="book-box">
+                    <figure><img th:src="@{~/img/manga.jpeg}"  alt="img"/></figure>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="book-box">
+                    <figure><img th:src="@{~/img/manga2.jpeg}"  alt="img"/></figure>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                <div class="book-box">
+                    <figure><img th:src="@{~/img/manga3.jpeg}"  alt="img"/></figure>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="read-more">
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end Books -->
+
+<footer>
+    <div class="footer" style="background-color: gray; margin-top: 50px">
+        <div class="container">
+            <div class="row pdn-top-30">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="Follow">
+                        <h3>Follow Us</h3>
+                    </div>
+                    <ul class="location_icon">
+                        <li> <a href="#"><img src="icon/facebook.png" th:src="@{~/img/facebook.png}" ></a></li>
+                        <li> <a href="#"><img src="icon/Twitter.png" th:src="@{~/img/Twitter.png}" ></a></li>
+                        <li> <a href="#"><img src="icon/linkedin.png" th:src="@{~/img/linkedin.png}" ></a></li>
+                        <li> <a href="#"><img src="icon/instagram.png" th:src="@{~/img/instagram.png}" ></a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                    <div class="Follow">
+                        <h3>Newsletter</h3>
+                    </div>
+                    <input class="Newsletter" placeholder="Enter your email" type="Enter your email">
+                    <button class="Subscribe">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<!--<main class="l-main">-->
+<!--    &lt;!&ndash;===== HOME =====&ndash;&gt;-->
+<!--    <section class="home" id="home">-->
+<!--&lt;!&ndash;        <div class="home__container bd-grid">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="home__img">&ndash;&gt;-->
+<!--&lt;!&ndash;                <img th:src="@{~/img/img1.png}" alt="" data-speed="-2" class="move">&ndash;&gt;-->
+<!--&lt;!&ndash;                <img th:src="@{~/img/img2.png}" alt="" data-speed="2" class="move">&ndash;&gt;-->
+<!--&lt;!&ndash;                <img th:src="@{~/img/img3.png}" alt="" data-speed="2" class="move">&ndash;&gt;-->
+<!--&lt;!&ndash;                <img th:src="@{~/img/img4.png}" alt="" data-speed="-2" class="move">&ndash;&gt;-->
+<!--&lt;!&ndash;                <img th:src="@{~/img/img5.png}" alt="" data-speed="-2" class="move">&ndash;&gt;-->
+<!--&lt;!&ndash;                <img th:src="@{~/img/img6.png}" alt="" data-speed="2" class="move">&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <div class="home__data">&ndash;&gt;-->
+<!--&lt;!&ndash;                <h1 class="home__title">Coffee<br> Drink 3D</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p class="home__description">Let's help discover the best coffee drink <br> of the week.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="#" class="home__button">Get Started</a>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;    <div class="gallery">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="galleryItem">&ndash;&gt;-->
+<!--&lt;!&ndash;            <h1 class="galleryTitle">Since 1981</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;            <img src="https://cdn.shopify.com/s/files/1/0274/5620/8968/products/GUESSWomen_sStoneZedSmallGirlfriendSatchelBagVB868322ModelView.jpg?v=1670476026"&ndash;&gt;-->
+<!--&lt;!&ndash;                 alt="" class="galleryImg">&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="galleryItem">&ndash;&gt;-->
+<!--&lt;!&ndash;            <img src="https://cdn.shopify.com/s/files/1/0274/5620/8968/products/GUESSWomensPinkLittleBayShoulderBagWG811618LifestyleView_3c795cf2-ebe8-486b-8c64-04f2e43a1c03.jpg?v=1666667167"&ndash;&gt;-->
+<!--&lt;!&ndash;                 alt="" class="galleryImg">&ndash;&gt;-->
+<!--&lt;!&ndash;            <h1 class="galleryTitle">Shop the Must-Haves</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="galleryItem">&ndash;&gt;-->
+<!--&lt;!&ndash;            <h1 class="galleryTitle">Find your style</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;            <img src="https://cdn.shopify.com/s/files/1/0274/5620/8968/products/GUESSWomen_sBlackLaFemmeShoulderBagPD868919ModelView.jpg?v=1674004532"&ndash;&gt;-->
+<!--&lt;!&ndash;                 alt="" class="galleryImg">&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="newSeason">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="nsItem">&ndash;&gt;-->
+<!--&lt;!&ndash;            <img src="https://cdn.shopify.com/s/files/1/0274/5620/8968/files/BAGS-FALL-MEGA-MENU_540x.jpg?v=1673573160"&ndash;&gt;-->
+<!--&lt;!&ndash;                 alt="" class="nsImg">&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="nsItem">&ndash;&gt;-->
+<!--&lt;!&ndash;            <h3 class="nsTitleSm">WINTER NEW ARRIVALS</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;            <h1 class="nsTitle">New Season</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;            <h1 class="nsTitle">New Collection</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;            <a href="#nav">&ndash;&gt;-->
+<!--&lt;!&ndash;                <button class="nsButton">CHOOSE YOUR STYLE</button>&ndash;&gt;-->
+<!--&lt;!&ndash;            </a>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="nsItem">&ndash;&gt;-->
+<!--&lt;!&ndash;            <img src="https://cdn.shopify.com/s/files/1/0274/5620/8968/files/Untitled-1_540x.jpg?v=1673502516"&ndash;&gt;-->
+<!--&lt;!&ndash;                 alt="" class="nsImg">&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    <footer>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="footerLeft">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="footerMenu">&ndash;&gt;-->
+<!--&lt;!&ndash;                <h1 class="fMenuTitle">About Us</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;                <ul class="fList">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="fListItem">Company</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="fListItem">Contact</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="fListItem">Careers</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="fListItem">Affiliates</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="fListItem">Stores</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="footerMenu">&ndash;&gt;-->
+<!--&lt;!&ndash;                <h1 class="fMenuTitle">Useful Links</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;                <ul class="fList">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="fListItem">Support</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="fListItem">Refund</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="fListItem">FAQ</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="fListItem">Feedback</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="fListItem">Stories</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="footerMenu">&ndash;&gt;-->
+<!--&lt;!&ndash;                <h1 class="fMenuTitle">Products</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;                <ul class="fList">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="fListItem">Air Force</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="fListItem">Air Jordan</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="fListItem">Blazer</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="fListItem">Crater</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="fListItem">Hippie</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="footerRight">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="footerRightMenu">&ndash;&gt;-->
+<!--&lt;!&ndash;                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="fMail">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <input type="text" placeholder="your@email.com" class="fInput">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <button class="fButton">Join!</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="footerRightMenu">&ndash;&gt;-->
+<!--&lt;!&ndash;                <h1 class="fMenuTitle">Follow Us</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="fIcons">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <img src="./img/facebook.png" alt="" class="fIcon">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <img src="./img/twitter.png" alt="" class="fIcon">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <img src="./img/instagram.png" alt="" class="fIcon">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <img src="./img/whatsapp.png" alt="" class="fIcon">&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="footerRightMenu">&ndash;&gt;-->
+<!--&lt;!&ndash;                <span class="copyright">@Prasna Aryal. All rights reserved. 2022.</span>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    </footer>&ndash;&gt;-->
+<!--    </section>-->
+<!--</main>-->
+
+<!--===== GSAP =====-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+<!--===== MAIN JS =====-->
+<script th:src="@{~/js/main.js}"></script>
+</body>
+</html>
