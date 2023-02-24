@@ -11,7 +11,24 @@
     <link th:href="@{~/css/student.css}" rel="stylesheet">
 </head>
 <body>
+<!--<nav class="navbar navbar-expand-md" style="background-color: #FCA4A6;">-->
+<!--    &lt;!&ndash; Brand &ndash;&gt;-->
+<!--    <a class="navbar-brand" style="color: white;" href="#">Coffee</a>-->
 
+<!--    &lt;!&ndash; Toggler/collapsibe Button &ndash;&gt;-->
+<!--    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">-->
+<!--        <span class="navbar-toggler-icon"></span>-->
+<!--    </button>-->
+
+<!--    &lt;!&ndash; Navbar links &ndash;&gt;-->
+<!--    <div class="collapse navbar-collapse" id="collapsibleNavbar">-->
+<!--        <ul class="navbar-nav">-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link"style="color: white;" th:href="@{/students}">Details</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</nav>-->
 <br>
 <br>
 <div class = "container">
@@ -20,15 +37,15 @@
         <div class ="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
             <h2 class = "text-center" style="padding-top: 50px; font-size: 2.1rem;
     font-weight: 600;
-    color: #151111;" >New customer?</h2>
-            <h6 style="color: #bababa;
-    font-weight: 400;
-    font-size: 0.75rem;
-    justify-items: center;">Add New Manga Book </h6>
+    color: #151111;" > Add New Manga Book </h2>
+            <!--            <h6 style="color: #bababa;-->
+            <!--    font-weight: 400;-->
+            <!--    font-size: 0.75rem;-->
+            <!--    justify-items: center;">Add them on the list</h6>-->
             <div class = "card-body">
-                <form th:action="@{/user/menus/new}" th:object = "${menus}" method="POST">
+                <form th:action="@{/user/menus}" th:object = "${menu}" method="POST">
                     <div class ="form-group">
-                        <label>  Full Name </label>
+                        <label>  Name </label>
                         <input
                                 type = "text"
                                 name = "Name"
@@ -39,24 +56,24 @@
                     </div>
 
                     <div class ="form-group">
-                        <label> Manga Name </label>
+                        <label>  Price </label>
                         <input
                                 type = "text"
                                 name = "Price"
                                 th:field = "*{Price}"
                                 class = "form-control"
-                                placeholder="Enter Manga Name"
+                                placeholder="Enter Last Name"
                         />
                     </div>
 
                     <div class ="form-group">
-                        <label>  Email </label>
+                        <label>  Stock </label>
                         <input
                                 type = "text"
                                 name = "Stock"
                                 th:field = "*{Stock}"
                                 class = "form-control"
-                                placeholder="Enter  Email"
+                                placeholder="Enter  Amount"
                         />
                     </div>
 
@@ -73,74 +90,3 @@
 </div>
 </body>
 </html>
-<!--<!DOCTYPE html>-->
-<!--<html xmlns:th="http://www.thymeleaf.org">-->
-<!--<head>-->
-<!--    <meta charset="ISO-8859-1">-->
-<!--    <title>Manga-Book</title>-->
-<!--    <link rel="stylesheet"-->
-<!--          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"-->
-<!--          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"-->
-<!--          crossorigin="anonymous">-->
-
-<!--    <link th:href="@{~/css/student.css}" rel="stylesheet">-->
-<!--</head>-->
-<!--<body>-->
-
-<!--<br>-->
-<!--<br>-->
-<!--<div class = "container">-->
-<!--    <div class = "row">-->
-<!--        &lt;!&ndash;        box form with heading css&ndash;&gt;-->
-<!--        <div class ="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">-->
-<!--            <h2 class = "text-center" style="padding-top: 50px; font-size: 2.1rem;-->
-<!--    font-weight: 600;-->
-<!--    color: #151111;" > Add New Manga Book </h2>-->
-
-<!--            <div class = "card-body">-->
-<!--                <form th:action="@{/user/menus/new}" th:object = "${menu}" method="POST">-->
-<!--                    <div class ="form-group">-->
-<!--                        <label>  Name </label>-->
-<!--                        <input-->
-<!--                                type = "text"-->
-<!--                                name = "Name"-->
-<!--                                th:field = "*{Name}"-->
-<!--                                class = "form-control"-->
-<!--                                placeholder="Enter First Name"-->
-<!--                        />-->
-<!--                    </div>-->
-
-<!--                    <div class ="form-group">-->
-<!--                        <label>  Price </label>-->
-<!--                        <input-->
-<!--                                type = "text"-->
-<!--                                name = "Price"-->
-<!--                                th:field = "*{Price}"-->
-<!--                                class = "form-control"-->
-<!--                                placeholder="Enter Last Name"-->
-<!--                        />-->
-<!--                    </div>-->
-<!--                    <div class ="form-group">-->
-<!--                        <label>  Stock </label>-->
-<!--                        <input-->
-<!--                                type = "text"-->
-<!--                                name = "Stock"-->
-<!--                                th:field = "*{Stock}"-->
-<!--                                class = "form-control"-->
-<!--                                placeholder="Enter  Amount"-->
-<!--                        />-->
-<!--                    </div>-->
-
-<!--                    <div class = "box-footer">-->
-<!--                        <button type="submit"  class = "btn btn-primary">-->
-<!--                            Submit-->
-<!--                        </button>-->
-<!--                    </div>-->
-<!--                </form>-->
-
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-<!--</body>-->
-<!--</html>-->
